@@ -1,6 +1,9 @@
 header {
-height: 900px;
+height: 980px;
 .bg-img('bg-img.png');
+background-attachment: scroll;
+
+
 
 .navigation {
 background-color: fade(@bg-shadow, 70%);
@@ -61,6 +64,7 @@ position: relative;
       margin: 0 270px;
       justify-content: center;
       align-items: center;
+      position: relative;
       h1{
       letter-spacing: 4px;
       font-family: 'PlayfairDisplay', sans-serif;
@@ -102,8 +106,52 @@ position: relative;
     background-color: #000000;
      }
       }
-      .bread {
-            border: 10px solid #000000;
-            border-image: url('../../img/border-bread.png') 30 stretch;
-      }
+}
+.desc-cake{
+  .bread{
+ position: absolute;
+ left: 47%;
+ bottom: -7%;
+ border-color: #fff;
+}
+.desc {
+  top: 110px;
+  left: 100px;
+  font-family: 'Alegreya';
+  h1{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    padding-right: 10px;
+    font-weight: 650;
+    font-size: 50px;
+  }
+  h3{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    padding-right: 10px;
+    font-size: 18px;
+    font-weight: 550;
+    color: #d3c0b1;
+    text-transform: uppercase;
+  }
+  p{
+  margin-top: 25px;
+  font-size: 18px;
+  font-family: 'ProximaNova';
+  font-weight: 600;
+  text-align: center;
+  }
+  h4{
+    font-weight: 550;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+  }
+
+}
+
 }
