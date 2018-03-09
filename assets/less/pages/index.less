@@ -1,0 +1,109 @@
+header {
+height: 900px;
+.bg-img('bg-img.png');
+
+.navigation {
+background-color: fade(@bg-shadow, 70%);
+padding-top: 35px;
+display: flex;
+align-items: stretch;
+height: 70px;
+padding: 15px;
+justify-content: center;
+position: relative;
+	li {
+	display: inline-block;
+      margin-left: 86px;
+      font-family: 'Alegreya';
+      font-size: 24px;
+      font-weight: 400;
+      list-style: none;
+      letter-spacing: 4px;
+      position: relative;
+      &:after{
+      	content: '~';
+      	display: block;
+      	font-size: 18px;
+      	color: #fff;
+      	font-weight: 600;
+      	line-height: 20px;
+      	position: absolute;
+      	left: 100%;
+      	margin-left: 40px;
+        bottom: 6px;
+      }
+      &:last-child:after{
+      	display: none;
+      }
+   }
+    a{
+      color: #fff;
+      .transition();
+      text-decoration: none;
+       &:hover{
+      color: #000000;
+      }}
+}
+
+}
+.logo{
+      position: absolute;
+      right: 80%;
+}
+.icon{
+   position: relative;
+   left: 150px;
+   top: 7px;
+   margin-left: 15px;
+}
+.hero-heading{
+      padding-top: 210px;
+      margin: 0 270px;
+      justify-content: center;
+      align-items: center;
+      h1{
+      letter-spacing: 4px;
+      font-family: 'PlayfairDisplay', sans-serif;
+      font-weight: 700;
+      font-size: 4.5em;
+      color: #fff;
+      }
+      hr{
+      margin-top: 61px; 
+      margin-left: 190px;
+      width: 228px;
+     color: #afaba7;
+      }
+      p {
+      margin-top: 40px;
+      text-align: center;
+      font-family: 'WorkSans';
+      font-weight: 500;
+      color: #fff;
+      font-size: 25px;
+      }
+      button{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: #fff;
+     font-weight: 650;
+     font-size: 16px;
+     margin-top: 70px;
+     margin-left: 175px;
+     width: 200px;
+     font-family: 'WorkSans';
+     height: 50px;
+     letter-spacing: 1px;
+     background-color: rgba(105, 101, 92, .5);
+     text-transform: uppercase;
+     border: 1px dashed #9e9c93;
+     &:hover {
+    background-color: #000000;
+     }
+      }
+      .bread {
+            border: 10px solid #000000;
+            border-image: url('../../img/border-bread.png') 30 stretch;
+      }
+}
