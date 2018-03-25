@@ -66,11 +66,13 @@ position: relative;
       align-items: center;
       position: relative;
       h1{
+
       letter-spacing: 4px;
       font-family: 'PlayfairDisplay', sans-serif;
       font-weight: 700;
       font-size: 4.5em;
       color: #fff;
+      text-align: center;
       }
       hr{
       margin-top: 61px; 
@@ -106,19 +108,20 @@ position: relative;
     background-color: #000000;
      }
       }
-}
-.desc-cake{
-  .bread{
+}  
+.bread{
  position: absolute;
  left: 47%;
- bottom: -7%;
- border-color: #fff;
+ top: 95%;
+
 }
+.desc-cake{
+
 .desc {
   top: 110px;
   left: 100px;
   font-family: 'Alegreya';
-  h1{
+  .art_cacke{
     display: flex;
     flex-direction: center;
     justify-content: center;
@@ -150,8 +153,67 @@ position: relative;
     display: flex;
     justify-content: center;
     padding: 35px;
+    margin-right: 15px;
   }
 
-}
+}}
 
+//desc-cake
+
+.chef-cook {
+  position: relative;
+  top: 110px;
+  left:  15px;
+  img {
+   padding: 0 62px 0 62px;
+   border-radius: 50%;
+   height: 140px;
+
+  }
+  h1{
+    display: inline-flex;
+    flex-direction: row;
+    padding: 10px 0 10px 0;
+    border-bottom: 2px solid #d7d5ca;
+    border-top: 2px solid #d7d5ca;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: 'Alegreya';
+  }
+  p {
+    margin-top: 50px;
+    color: #a47d5e;
+    font-family: 'PlayfairDisplay';
+    font-weight: 300;
+    font-size: 30px;
+  }
+  p:before {
+    position: relative;
+    bottom: 15px;
+    right: 10px;
+    content: open-quote;  
+    font-size: 50px;  
+    text-align: center; 
+    letter-spacing: 2px; 
+  }
+  p:after {
+     position: relative;
+     bottom: 15px;
+     letter-spacing: 2px;
+     content: close-quote;  
+     font-size: 50px;  
+     text-align: center;  
+  }
+}
+//imges
+.tastes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: -75%;
+  left: 12%;
+  .gridients{
+
+  }
 }
