@@ -115,8 +115,11 @@ position: relative;
  top: 95%;
 
 }
-.desc-cake{
 
+
+.desc-cake{
+  position: relative;
+  right: 10%;
 .desc {
   top: 110px;
   left: 100px;
@@ -192,28 +195,55 @@ position: relative;
     bottom: 15px;
     right: 10px;
     content: open-quote;  
-    font-size: 50px;  
+    font-size: 40px;  
     text-align: center; 
     letter-spacing: 2px; 
-  }
-  p:after {
-     position: relative;
-     bottom: 15px;
-     letter-spacing: 2px;
-     content: close-quote;  
-     font-size: 50px;  
-     text-align: center;  
+    text-align: center;  
   }
 }
-//imges
+
+
+//img
 .tastes {
+  .gridients{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  position: absolute;
-  bottom: -75%;
-  left: 12%;
-  .gridients{
-
+  position: relative;
+  bottom: 480px;
+  margin-left: 20px;
+  margin-bottom: -25px;
+  height: 340px;
+  max-width: 350px;
   }
+  .center {
+    height: 270px;
+    width: 270px;
+    opacity: 1;
+    position: relative;
+    bottom: 260px;  
+  }
+      h1 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'PlayfairDisplay';
+    }
+  
+}
+
+.floor {
+.bg-img-small('flour.png');
+opacity: 0.7;
+}
+.egg {
+.bg-img-small('egg.png');
+opacity: 0.7;
+}
+.cake {
+.bg-img-small('cake.png');
+opacity: 0.7;
+}
+.strawberry {
+.bg-img-small('strawberry.png');
+opacity: 0.7;
 }
