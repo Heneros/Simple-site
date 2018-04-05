@@ -3,26 +3,24 @@ height: 980px;
 .bg-img('bg-img.png');
 background-attachment: scroll;
 
-
-
 .navigation {
 background-color: fade(@bg-shadow, 70%);
-padding-top: 35px;
 display: flex;
 align-items: stretch;
-height: 70px;
-padding: 15px;
+max-height: 70px;
+padding: 15px ;
 justify-content: center;
-position: relative;
+width: 100%;
 	li {
-	display: inline-block;
+	    display: inline-block;
       margin-left: 86px;
       font-family: 'Alegreya';
       font-size: 24px;
-      font-weight: 400;
+      font-weight: 450;
       list-style: none;
       letter-spacing: 4px;
       position: relative;
+      float: left;
       &:after{
       	content: '~';
       	display: block;
@@ -39,25 +37,32 @@ position: relative;
       	display: none;
       }
    }
-    a{
+    .menu-link{
       color: #fff;
       .transition();
       text-decoration: none;
        &:hover{
       color: #000000;
-      }}
+      }
+    }
 }
 
 }
+
 .logo{
       position: absolute;
       right: 80%;
+      float: left;
 }
 .icon{
    position: relative;
    left: 150px;
    top: 7px;
-   margin-left: 15px;
+   color: #fff;
+   padding-left: 15px;
+   &:hover {
+    color: #000;
+   }
 }
 .hero-heading{
       padding-top: 210px;
@@ -110,9 +115,9 @@ position: relative;
       }
 }  
 .bread{
- position: absolute;
- left: 47%;
- top: 95%;
+position: absolute;
+left: 45%;
+bottom: -6%;
 
 }
 
@@ -209,13 +214,12 @@ position: relative;
   display: flex;
   flex-direction: column;
   position: relative;
-  bottom: 680px;
+  bottom: 500px;
   margin-left: 20px;
   margin-bottom: -35px;
   height: 340px;
   max-width: 350px;
   }
-
 
     h1 {
   font-size: 18px;
@@ -243,19 +247,21 @@ position: relative;
 }
   .center  {
   position: relative;
-  bottom: 230px;
-  margin-left: 976px;
+  bottom: 300px;
+  left: 85px;
+  float: right;
   opacity: 0.9;
-  z-index: 2;
+  z-index: 1;
   img {
-    width: 255px;
+    max-width: 255px;
   }
   .block-text{
   position: absolute;
   top: 30%;
-  transform: translateX(45%);
-  font-weight: 570;
-  font-size: 28px;
+  transform: translateX(40%);
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
   color: #c9b176;
   font-family: 'Alegreya';
   }
