@@ -1,8 +1,12 @@
+///Navbar start
+
+body{
+margin:0px;
+padding:0px;
+}
 header {
 height: 980px;
 .bg-img('bg-img.png');
-background-attachment: scroll;
-
 .navigation {
 background-color: fade(@bg-shadow, 70%);
 display: flex;
@@ -11,8 +15,8 @@ max-height: 70px;
 padding: 15px ;
 justify-content: center;
 width: 100%;
-	li {
-	    display: inline-block;
+  li {
+      display: inline-block;
       margin-left: 86px;
       font-family: 'Alegreya';
       font-size: 24px;
@@ -22,22 +26,22 @@ width: 100%;
       position: relative;
       float: left;
       &:after{
-      	content: '~';
-      	display: block;
-      	font-size: 18px;
-      	color: #fff;
-      	font-weight: 600;
-      	line-height: 20px;
-      	position: absolute;
-      	left: 100%;
-      	margin-left: 40px;
+        content: '~';
+        display: block;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 600;
+        line-height: 20px;
+        position: absolute;
+        left: 100%;
+        margin-left: 40px;
         bottom: 6px;
       }
       &:last-child:after{
-      	display: none;
+        display: none;
       }
    }
-    .menu-link{
+    .menu-link {
       color: #fff;
       .transition();
       text-decoration: none;
@@ -46,13 +50,12 @@ width: 100%;
       }
     }
 }
-
 }
 
 .logo{
       position: absolute;
       right: 80%;
-      float: left;
+   
 }
 .icon{
    position: relative;
@@ -64,36 +67,42 @@ width: 100%;
     color: #000;
    }
 }
-.hero-heading{
-      padding-top: 210px;
-      margin: 0 270px;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      h1{
+//NAVBAR END
 
-      letter-spacing: 4px;
-      font-family: 'PlayfairDisplay', sans-serif;
-      font-weight: 700;
-      font-size: 4.5em;
-      color: #fff;
-      text-align: center;
-      }
+
+
+///heading
+.hero-heading{
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  left: 23%;
+  padding-top: 210px;
+     h1{
+    letter-spacing: 4px;
+    font-family: 'PlayfairDisplay', sans-serif;
+    font-weight: 700;
+    font-size: 4.5em;
+    color: #fff;
+    text-align: center;
+    }
       hr{
       margin-top: 61px; 
       margin-left: 190px;
       width: 228px;
      color: #afaba7;
       }
-      p {
-      margin-top: 40px;
+    p{
+        margin-top: 40px;
       text-align: center;
       font-family: 'WorkSans';
       font-weight: 500;
       color: #fff;
       font-size: 25px;
-      }
-      button{
+    }
+     button{
      display: flex;
      justify-content: center;
      align-items: center;
@@ -112,8 +121,10 @@ width: 100%;
      &:hover {
     background-color: #000000;
      }
-      }
-}  
+   }
+}
+
+///heading-end
 .bread{
 position: absolute;
 left: 45%;
@@ -200,13 +211,19 @@ bottom: -6%;
     bottom: 15px;
     right: 10px;
     content: open-quote;  
-    font-size: 40px;  
-    text-align: center; 
-    letter-spacing: 2px; 
-    text-align: center;  
+    font-size: 50px;  
+     text-align: center; 
+     letter-spacing: 2px; 
+   }
+  p:after {
+     position: relative;
+     bottom: 15px;
+     letter-spacing: 2px;
+     content: close-quote;  
+     font-size: 50px;  
+     text-align: center;  
   }
 }
-
 
 //imgпуы
 .tastes {
@@ -220,6 +237,7 @@ bottom: -6%;
   height: 340px;
   max-width: 350px;
   }
+
 
     h1 {
   font-size: 18px;
@@ -265,4 +283,27 @@ bottom: -6%;
   color: #c9b176;
   font-family: 'Alegreya';
   }
+  }
+///////Table
+  .bg-table {
+    .bg-img('bg-table.png');
+    width: 100%;
+    height: 700px;
+    position: relative;
+    bottom: 400px;
+    .pancakes{
+      position: relative;
+      top: 141px;
+      left: -72px;
+    }
+    .recipe{
+    position: relative;
+    bottom: 366px;
+    left: 323px;
+    h1{ 
+    position: relative;
+    bottom: 366px;
+    left: 323px;
+    }
+    }
   }
