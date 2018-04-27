@@ -3,6 +3,8 @@
 
 header {
 min-height: 980px;
+display: block;
+max-width: 100%;
 .bg-img('bg-img.png');
 }
 .navigation {
@@ -14,6 +16,7 @@ justify-content: center;
 flex-wrap: wrap;
 flex-direction: row;
 align-items: flex-start;
+min-width: 80%;
 }
     .menu-link {
       color: #fff;
@@ -39,9 +42,9 @@ align-items: flex-start;
       font-weight: 450;
       list-style: none;
       letter-spacing: 4px;
-      display: inline-block;
+      display: inline-flex;
       padding: 30px 0 30px 80px;
-}
+}    
 
 
 .logo {
@@ -55,12 +58,11 @@ align-items: flex-start;
 .society{
   display: flex;
   flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-
-
-    // margin-top: 35px;
-    // margin-left: 151px;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: -10%;
+  /// margin-left: 151px;
 
 }
 .society .icon{
@@ -77,25 +79,28 @@ align-items: flex-start;
 ///heading
 .hero-heading{
   display: inline-flex;
-  justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   position: relative;
   left: 23%;
-  padding-top: 210px;
-  height: auto;
+  padding: 210px 350px 0px 0px;
+  width: 90%;
      h1{
     letter-spacing: 4px;
     font-family: 'PlayfairDisplay', sans-serif;
     font-weight: 700;
     font-size: 4.5em;
     color: #fff;
+
     text-align: center;
     }
       hr{
       margin-top: 61px; 
       margin-left: 190px;
       width: 228px;
-     color: #afaba7;
+      color: #afaba7;
       }
     p{
         margin-top: 40px;
@@ -109,11 +114,12 @@ align-items: flex-start;
      display: flex;
      justify-content: center;
      align-items: center;
+     flex-wrap: wrap;
      color: #fff;
      font-weight: 650;
      font-size: 16px;
      margin-top: 70px;
-     margin-left: 175px;
+
      width: 200px;
      font-family: 'WorkSans';
      height: 50px;
@@ -137,11 +143,11 @@ bottom: -6%;
 
 
 .desc-cake{
-margin-left: 75px; 
-  overflow: hidden;
+margin-left: 248px; 
+overflow: hidden;
 .desc {
-  top: 110px;
-
+   margin-top: 110px;
+   margin-right: 100px;
   font-family: 'Alegreya';
   .art_cacke{
     display: flex;
@@ -150,6 +156,7 @@ margin-left: 75px;
     letter-spacing: 1px;
     padding-right: 10px;
     font-weight: 650;
+    text-align: center;
     font-size: 50px;
   }
   h3{
@@ -183,23 +190,22 @@ margin-left: 75px;
 //desc-cake
 
 .chef-cook {
-  margin-top: 110px;
-  margin-left: -180px;
+  // margin-top: 110px;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
   flex-direction: row;
-  align-items: stretch;
-  justify-content: center;
-
+  align-items: center;
+  justify-content:center;
+  margin-right: 50px;
   img {
    padding: 0 62px 0 62px;
    border-radius: 50%;
    height: 140px;
-
+  
   }
   h1{
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     padding: 10px 0 10px 0;
     border-bottom: 2px solid #d7d5ca;
@@ -208,30 +214,33 @@ margin-left: 75px;
     font-size: 30px;
     font-family: 'Alegreya';
   }
-  p {
-    margin-top: 50px;
+   .quote{
+    position: relative;
+    margin-top: 70px;
+    margin-left: 227px;
+    margin-right: 250px;
     color: #a47d5e;
     font-family: 'PlayfairDisplay';
     font-weight: 300;
     font-size: 30px;
   }
   p:before {
-    position: relative;
+    position: absolute;
     bottom: 15px;
-    right: 10px;
     content: open-quote;  
     font-size: 50px;  
-     text-align: center; 
-     letter-spacing: 2px; 
+    text-align: center; 
+    letter-spacing: 2px; 
    }
   p:after {
-     position: relative;
+     position: absolute;
      bottom: 15px;
      letter-spacing: 2px;
      content: close-quote;  
      font-size: 50px;  
      text-align: center;  
   }
+
 }
 
 //imgпуы
