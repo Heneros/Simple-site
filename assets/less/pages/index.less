@@ -5,6 +5,7 @@ header {
 min-height: 980px;
 display: block;
 max-width: 100%;
+height: 100vh;
 .bg-img('bg-img.png');
 }
 .navigation {
@@ -25,16 +26,6 @@ min-width: 80%;
       font-weight: 450;
       list-style: none; 
       letter-spacing: 4px;
-       &:hover{
-      color: #000;
-      text-decoration: none;
-      }
-
-      &:last-child:after{
-        display: none;
-      }
-
-
     }
 
 .menu-item{
@@ -42,10 +33,19 @@ min-width: 80%;
       font-weight: 450;
       list-style: none;
       letter-spacing: 4px;
-      display: inline-flex;
+      display: inline-block;
       padding: 30px 0 30px 80px;
+     &:hover{
+      text-decoration: none;
+     }
 }    
-
+.menu-item,.menu-link{
+  &:hover{
+      color: #000;
+      text-decoration: none;
+            list-style: none; 
+  }
+}
 
 .logo {
       padding: 23px 0 0 170px;
@@ -62,7 +62,7 @@ min-width: 80%;
   flex-wrap: wrap;
   justify-content: space-around;
   width: -10%;
-  /// margin-left: 151px;
+  margin-left: 151px;
 
 }
 .society .icon{
@@ -79,21 +79,20 @@ min-width: 80%;
 ///heading
 .hero-heading{
   display: inline-flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  position: relative;
-  left: 23%;
-  padding: 210px 350px 0px 0px;
-  width: 90%;
+  align-content:center;
+  align-items: baseline;
+  padding: 170px 350px 0px 300px;
+  max-width: 1100px;
+  min-width: 109%;
      h1{
     letter-spacing: 4px;
     font-family: 'PlayfairDisplay', sans-serif;
     font-weight: 700;
     font-size: 4.5em;
     color: #fff;
-
     text-align: center;
     }
       hr{
@@ -103,7 +102,7 @@ min-width: 80%;
       color: #afaba7;
       }
     p{
-        margin-top: 40px;
+      margin-top: 40px;
       text-align: center;
       font-family: 'WorkSans';
       font-weight: 500;
@@ -111,7 +110,7 @@ min-width: 80%;
       font-size: 25px;
     }
      button{
-     display: flex;
+     display: inline-flex;
      justify-content: center;
      align-items: center;
      flex-wrap: wrap;
@@ -119,7 +118,6 @@ min-width: 80%;
      font-weight: 650;
      font-size: 16px;
      margin-top: 70px;
-
      width: 200px;
      font-family: 'WorkSans';
      height: 50px;
@@ -135,20 +133,20 @@ min-width: 80%;
 
 ///heading-end
 .bread{
-position: absolute;
-left: 45%;
-bottom: -6%;
-  overflow: hidden;
+    margin-left: 48%;
+    margin-top: 8%;
 }
 
 
 .desc-cake{
 margin-left: 248px; 
 overflow: hidden;
+min-width: 46%;
 .desc {
    margin-top: 110px;
    margin-right: 100px;
-  font-family: 'Alegreya';
+   font-family: 'Alegreya';
+   min-width: 350px;
   .art_cacke{
     display: flex;
     flex-direction: center;
@@ -164,12 +162,13 @@ overflow: hidden;
     flex-direction: center;
     justify-content: center;
     padding-right: 10px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 550;
     color: #d3c0b1;
     text-transform: uppercase;
   }
   p{
+  min-width: 350px;
   margin-top: 25px;
   font-size: 18px;
   font-family: 'ProximaNova';
@@ -190,7 +189,6 @@ overflow: hidden;
 //desc-cake
 
 .chef-cook {
-  // margin-top: 110px;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
@@ -207,7 +205,7 @@ overflow: hidden;
   h1{
     display: flex;
     flex-direction: row;
-    padding: 10px 0 10px 0;
+    padding: 20px 0 20px 0;
     border-bottom: 2px solid #d7d5ca;
     border-top: 2px solid #d7d5ca;
     font-weight: 500;
@@ -216,29 +214,35 @@ overflow: hidden;
   }
    .quote{
     position: relative;
-    margin-top: 70px;
-    margin-left: 227px;
-    margin-right: 250px;
+    padding-right: 33px;
+    padding-top: 51px;
     color: #a47d5e;
     font-family: 'PlayfairDisplay';
     font-weight: 300;
     font-size: 30px;
+     min-width: 125%;
+     display: inline-flex;
+     flex-wrap: nowrap;
+     flex-direction: row;
+     justify-content: center;
   }
   p:before {
     position: absolute;
     bottom: 15px;
+    left: 65%; 
     content: open-quote;  
     font-size: 50px;  
-    text-align: center; 
     letter-spacing: 2px; 
+   
    }
   p:after {
      position: absolute;
      bottom: 15px;
+     right: 68%;
      letter-spacing: 2px;
      content: close-quote;  
      font-size: 50px;  
-     text-align: center;  
+     
   }
 
 }
@@ -247,15 +251,15 @@ overflow: hidden;
 .tastes {
   .gridients{
   display: flex;
-  flex-direction: column;
-  position: relative;
-  bottom: 500px;
+  flex-direction: row;
   margin-left: 20px;
   margin-bottom: -35px;
   height: 340px;
   max-width: 350px;
   }
-
+.tastes{
+  margin-bottom: 30%;
+}
 
     h1 {
   font-size: 18px;
