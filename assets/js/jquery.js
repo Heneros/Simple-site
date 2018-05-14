@@ -1,5 +1,5 @@
-$(document).ready(function(){
-  $('.trigger').click(function(){
-    ('.pancakes').toggle(200);
+  $(function() {
+    $('#stars').barrating({
+      theme: 'fontawesome-stars'
+    });
   });
-});

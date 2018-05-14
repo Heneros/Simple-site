@@ -35,7 +35,8 @@ min-width: 80%;
       letter-spacing: 4px;
       display: inline-block;
       padding: 30px 0 30px 80px;
-     &:hover{
+     &:hover, focus{
+
       text-decoration: none;
      }
 }    
@@ -195,7 +196,7 @@ min-width: 46%;
   flex-direction: row;
   align-items: center;
   justify-content:center;
-  margin-right: 50px;
+
   img {
    padding: 0 62px 0 62px;
    border-radius: 50%;
@@ -229,7 +230,7 @@ min-width: 46%;
   p:before {
     position: absolute;
     bottom: 15px;
-    left: 65%; 
+    left: 70%; 
     content: open-quote;  
     font-size: 50px;  
     letter-spacing: 2px; 
@@ -238,7 +239,7 @@ min-width: 46%;
   p:after {
      position: absolute;
      bottom: 15px;
-     right: 68%;
+     right: 73%;
      letter-spacing: 2px;
      content: close-quote;  
      font-size: 50px;  
@@ -247,85 +248,72 @@ min-width: 46%;
 
 }
 
-//imgпуы
+
+
+// <!--second block imgs-->
 .tastes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 93px;
+  img{
+      height: 260px;
+  }
+}
   .gridients{
   display: flex;
-  flex-direction: row;
-  margin-left: 20px;
-  margin-bottom: -35px;
-  height: 340px;
-  max-width: 350px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 -51px 30px -15px;
   }
-.tastes{
-  margin-bottom: 30%;
-}
 
-    h1 {
-  font-size: 18px;
-  color: #fff;
-  font-weight: 600;
-  font-family: 'PlayfairDisplay';
-    }
-}
 
-.floor {
-.bg-img-small('flour.png');
 
-}
-.egg {
-.bg-img-small('egg.png');
 
-}
-.cake {
-.bg-img-small('cake.png');
-
-}
-.strawberry {
-.bg-img-small('strawberry.png');
-
-}
   .center  {
   position: relative;
-  bottom: 300px;
-  left: 85px;
-  float: right;
-  opacity: 0.9;
+  top: 162px;
+  margin-bottom: -29%;
+  margin-left: 26%;
+  opacity: .9;
   z-index: 1;
   img {
     max-width: 255px;
-  }
+}
   .block-text{
   position: absolute;
-  top: 30%;
-
+  top: 29%;
   transform: translateX(40%);
   font-weight: 500;
   font-size: 30px;
   text-align: center;
   color: #c9b176;
-  font-family: 'Alegreya';
+  font-family: 'Alegreya', sans-serif;
   }
-  }
+}
 
 ///////bg-table
   .bg-table {
     .bg-img('bg-table.png');
-    width: 100%;
+    max-width: 100%;
     min-height: 700px;
     position: relative;
-    bottom: 400px;  
-     .stars {
-    color: rgb(255, 255, 255);
-    // position: relative;
-    // left: 30px;
-    &:hover{
-    
-    }
-    }  
-   .pancakes{
+    top: 90px;
+}
+    .pancakes{
     position: absolute;
     left: 237px;
     top:150px;
-   }
-  }
+    z-index: 1;
+
+}
+
+
+
+
+   // .pancakes{
+   //  position: absolute;
+   //  left: 237px;
+   //  top:150px;
+   // }
