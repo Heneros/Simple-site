@@ -8,7 +8,7 @@
   -webkit-font-smoothing: antialiased;
   text-decoration: none;
   margin-right: 2px;
-  z-index: 6;
+/*  z-index: 6;*/
   display: flex;
   font-size: 2em;
   position: relative;
