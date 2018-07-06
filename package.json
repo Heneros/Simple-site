@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/Rustam4457/Simple-site#readme",
   "dependencies": {
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "imagemin-gifsicle": "^5.2.0",
+    "imagemin-svgo": "^6.0.0",
+    "jpegtran-bin": "^3.2.0",
+    "optipng-bin": "^4.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.24.5",
@@ -31,6 +35,8 @@
     "gulp-less": "^3.5.0",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.3.0",
+    "gulp-rigger": "^0.5.8",
     "gulp-sourcemaps": "^2.6.4",
     "jquery": "^3.3.1"
   }
