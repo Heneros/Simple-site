@@ -6,12 +6,12 @@ const plumber = require('gulp-plumber');
 const autoprefixer = require('gulp-autoprefixer');
 const notify = require('gulp-notify');
 const browserSync = require('browser-sync').create();
-const imagemin = require('gulp-imagemin');
 const sourcemaps = require('gulp-sourcemaps');
 const cache = require('gulp-cache');
 const csso = require('gulp-csso');
 const concat = require('gulp-concat');
 const rigger = require('gulp-rigger');
+const image = require('gulp-image');
 
 
 
@@ -30,16 +30,15 @@ gulp.task('html', () =>{
    .on('end', browserSync.reload);
 });    
 
-gulp.task('imagemin',  ()=> {
+
+gulp.task('img',  ()=> {
   return gulp.src('src/img/**/*.{jpg, png, svg}')
-    .pipe(cache(imagemin({
-      optimizationLevel: 7,
-      progressive: true,
-      interlaced: true
-    })))
+    .pipe(image({}))
     .pipe(gulp.dest('build/img'))
     .pipe(notify({ message: 'Images task complete' }));
 });
+
+
 
 gulp.task('fonts', ()=> {
     return gulp.src('src/fonts/**/*.*')
@@ -71,13 +70,13 @@ gulp.task('script', function() {
 });
 gulp.task('watch', () =>{
    gulp.watch('src/index.html', gulp.series('html')),
-   gulp.watch('src/img/**/*.{jpg, png, svg}', gulp.series('imagemin')),
+   gulp.watch('src/img/**/*.{jpg, png, svg}', gulp.series('img')),
    gulp.watch('src/fonts/**/*.*', gulp.series('fonts')),
    gulp.watch('src/less/style.less', gulp.series('less')),
    gulp.watch('src/js/script.js', gulp.series('script'))
 });
 
 gulp.task('default', gulp.series(
-gulp.parallel('html', 'less', 'imagemin', 'fonts', 'script'),
+gulp.parallel('html', 'less', 'img', 'fonts', 'script'),
 gulp.parallel('watch', 'serve')
 ));
