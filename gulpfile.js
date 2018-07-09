@@ -7,7 +7,6 @@ const autoprefixer = require('gulp-autoprefixer');
 const notify = require('gulp-notify');
 const browserSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
-const cache = require('gulp-cache');
 const csso = require('gulp-csso');
 const concat = require('gulp-concat');
 const rigger = require('gulp-rigger');
@@ -45,7 +44,7 @@ gulp.task('fonts', ()=> {
     .pipe(gulp.dest('build/fonts'))
 });
 gulp.task('less', () => {
-  return gulp.src('src/less/style.less')
+  return gulp.src('src/less/style.less', 'src/css/*.css')
     .pipe(sourcemaps.init() )
     .pipe(less())
     .pipe(plumber() )
@@ -62,8 +61,9 @@ gulp.task('less', () => {
     .pipe( browserSync.reload({
       stream: true
     }));
+
 });
-gulp.task('script', function() {
+gulp.task('script', () =>{
   return gulp.src('src/js/**/*.*')
   .pipe(rigger())
   .pipe(gulp.dest('build/js'));
@@ -72,7 +72,7 @@ gulp.task('watch', () =>{
    gulp.watch('src/index.html', gulp.series('html')),
    gulp.watch('src/img/**/*.{jpg, png, svg}', gulp.series('img')),
    gulp.watch('src/fonts/**/*.*', gulp.series('fonts')),
-   gulp.watch('src/less/style.less', gulp.series('less')),
+   gulp.watch('src/**/*.less', gulp.series('less'), browserSync.reload),
    gulp.watch('src/js/script.js', gulp.series('script'))
 });
 
