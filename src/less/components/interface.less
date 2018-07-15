@@ -7,13 +7,22 @@
 
 }
 @media (min-width: 992px) and (max-width: 1200px){
-	.hero-heading{
-padding: 0;
+	header{
+        background-position: 40% 20%;
+    }
+    .hero-heading{
 margin: 0;
 overflow: hidden;
+white-space: nowrap;
+button{
+margin-left: 13rem;
+}
 	}
+
 	.navigation{
-		max-width: 100%;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
 	}
 }
 @media(max-width: 1540px){
@@ -22,13 +31,17 @@ overflow: hidden;
     position: relative;
     right: 80px;
 	}
-		.recipe{
-padding-left: 86px;
+   .recipe{
+    margin-left: 116px;
+    margin-bottom: 4px;
 	}
-	#content-slider{
-    padding-left: 36px;
-    max-width: 643px;
-	}
+    #slider{
+    position: relative;
+    left: 5%;   
+    #content-slider{
+    padding-left: 57px;
+    }
+}
 	.vector{
 		margin-left: 72px;
 	}
@@ -76,7 +89,7 @@ padding-left: 86px;
 }
 
 
-@media only screen and (max-width: 1299px){
+@media (max-width: 1299px){
   .bg-table{
     background-position: 48% 20%;
     font-size: 16px;
@@ -93,7 +106,7 @@ padding-left: 86px;
 
     .vector{
     height: 21vh; 
-    left: 20rem;
+    left: 69rem;
     .textVectora{  
     top: 45px;
     right: 133px;  
@@ -112,18 +125,16 @@ padding-left: 86px;
     }
 
     .recipe{
-    padding-top: 6rem;
-    padding-left: 22rem;
-    display: flex;
-    justify-content: center;
+    top: 35%;
+    margin-left: -3%;
         img{
-         max-height: 450px;
+         max-height: 47vh;
         }
 
     .textarea{
     position: relative;
-    top: 47rem;
-    right: 46rem;
+    top: 5rem;
+    right: 0rem;
         p{
     font-size: 16px;
     white-space: nowrap;
@@ -133,24 +144,58 @@ padding-left: 86px;
 
 
   #slider{
-  padding: 0;
-    position: relative;
-    bottom: 26rem;
-    left: 48px;
-    max-width: 320px;
+    padding: 0;
+    position: absolute;
+    bottom: 10rem;
+    left: 54rem;
+    max-width: 321px;
     #content-slider{
-    margin-left: -41px;
+    margin-left: -59px;
+    }
+    img{
+        max-height: 10vh;
     }
   }
   }
   
 }
 
-@media only screen and (max-width: 1171px){
-      .recipe{
-    position: relative;
-    bottom: 31rem;
-    left: 54rem;
-  }
+@media only screen and (max-width: 1057px){
+.recipe{
+    right: 12%;
+}
+.vector{
+margin-left: 3rem;
+}
 }
 
+@media only screen and (max-width: 989px){
+    .vector{
+margin-left: -4rem;
+max-height: 16vh;
+.textVectora{
+    right: 15px;
+}
+h4{
+    font-size: 18px;
+    left: -10px;
+}
+h1{
+font-size: 58px;
+}
+h5{
+    left: -14px;
+}
+}
+#slider{
+    right: 12px;
+}
+.pancakes{
+    right: 19rem;
+}
+}
+@media only screen and (max-width: 850px){
+     #slider{
+        right: 15rem;
+     }
+}

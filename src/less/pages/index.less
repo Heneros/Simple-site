@@ -81,13 +81,11 @@ min-width: 80%;
 ///heading
 .hero-heading{
   display: inline-flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-content:center;
-  align-items: baseline;
   padding: 170px 350px 0px 300px;
-  max-width: 1100px;
   min-width: 109%;
      h1{
     letter-spacing: 4px;
@@ -115,11 +113,11 @@ min-width: 80%;
      display: inline-flex;
      justify-content: center;
      align-items: center;
-     flex-wrap: wrap;
      color: #fff;
      font-weight: 650;
      font-size: 16px;
      margin-top: 70px;
+     margin-left: 180px;
      width: 200px;
      font-family: 'WorkSans';
      height: 50px;
@@ -304,7 +302,10 @@ min-width: 46%;
     }
 }
    .recipe {
-    margin: -72px 0px 0px -82px;
+    // margin: -72px 0px 0px -82px;
+    position: absolute;
+    left: 46%;
+    bottom: 46%;
     img{
       max-width: 700px;
     }
@@ -333,7 +334,7 @@ min-width: 46%;
 }
         #slider{
     width: 370px;     
-    padding-top: 41px;
+    padding-top: 277px;
     display: flex;
     justify-content: center;
     align-items: center;
