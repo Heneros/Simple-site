@@ -443,11 +443,7 @@ min-width: 46%;
      padding-bottom: 30px;
   }
  }
-
 }
-
-
-
  .breakfast-right{
     display: flex;
     justify-content: flex-end;
@@ -471,6 +467,7 @@ min-width: 46%;
     left: 19%;
     font-size: 19px;
     margin-top: 44px;
+    color: @title-clr;
     font-family: 'Alegreya',sans-serif;
     text-transform: uppercase;
     font-weight: 600;
@@ -494,7 +491,7 @@ min-width: 46%;
     right: 30%;
     margin-top: 211px;
     position: relative;
-    color: #56534c;
+    color: @title-clr;
     font-size: 44px;
     font-weight: 600;
  }
@@ -503,12 +500,49 @@ min-width: 46%;
     position: relative;
     margin-top: 38rem;
     font-size: 20px;
-    font-size: 20px;
     text-align: center;
     font-family: 'Alegreya',sans-serif;
-    color: #56534c;
+    color: @title-clr;
 
  }
 
  }
+///breakfast ends
 
+
+
+.bg-sandwich{
+ .bg-img('bg-sandwich.png');
+  max-width: 100%;
+  height: 1100px;
+  position: relative;
+  bottom: 83%;
+  font-family: 'Alegreya', sans-serif;
+  .title-sandwich{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 95px;
+  }
+  .title-sandwich-first{
+    font-size: 46px;
+    color: @title-clr;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 1px;
+  }
+  .title-sandwich-second{
+    position: relative;
+    bottom: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #aa866a;
+    text-transform: uppercase;
+  }
+}  
+  .ingredients{
+    img{
+   border-radius: 50%;
+   height: 100px;
+    }
+  }
