@@ -1,8 +1,8 @@
 {
   "name": "baker-site",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Site about bakery",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/Rustam4457/Simple-site.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Heneros",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Rustam4457/Simple-site/issues"
