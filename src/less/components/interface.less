@@ -1,10 +1,23 @@
 @import "../style.less";
+.main-nav-trigger {
+  display: none;
+  font-size: 45px;
+  color: #5f5f5f;
+  float: right;
+  line-height: 1;
+  cursor: pointer;
+  transition: color .3s ease-in-out;
+  &:hover {
+    color: pink;
+  }
+}
 @media screen and (max-width: 930px){
 	.hero-heading{
 	min-width: 139%;
 	}
-
-
+  .main-nav-trigger{
+    display: block;
+  }
 }
 @media (min-width: 992px) and (max-width: 1200px){
 	header{

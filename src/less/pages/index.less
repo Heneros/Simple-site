@@ -1,6 +1,6 @@
 
 @import "../style.less";
-///Navbar start
+///header start
 
 header {
 min-height: 980px;
@@ -19,6 +19,7 @@ flex-wrap: wrap;
 flex-direction: row;
 align-items: flex-start;
 min-width: 80%;
+
 }
     .menu-link {
       color: #fff;
@@ -27,8 +28,16 @@ min-width: 80%;
       font-weight: 450;
       list-style: none; 
       letter-spacing: 4px;
+      &:hover{
+      text-decoration: none;
+      color: #000000;
     }
+      &:focus{
+      color: #000000;
+      text-decoration: none;
+  }
 
+}
 .menu-item{
       font-family: 'Alegreya', sans-serif;
       font-weight: 450;
@@ -38,15 +47,23 @@ min-width: 80%;
       padding: 30px 0 30px 80px;
      &:hover{
       text-decoration: none;
-     }
-}    
-.menu-item,.menu-link{
-  &:hover{
-      color: #000;
-      text-decoration: none;
-            list-style: none; 
+ }
+     &:after{
+    content: '~';
+    display: block;
+    font-size: 35px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 20px;
+    position: absolute;
+    margin-left: -50px;
+    bottom: 47px;
   }
-}
+    &:nth-child(1):after{
+    display: none;
+  } 
+}    
+
 
 .logo {
       padding: 23px 0 0 170px;
@@ -228,7 +245,7 @@ min-width: 46%;
   &:before {
     position: absolute;
     bottom: 15px;
-    left: 70%; 
+    left: 74%; 
     content: open-quote;  
     font-size: 50px;  
     letter-spacing: 2px; 
@@ -237,7 +254,7 @@ min-width: 46%;
   &:after {
      position: absolute;
      bottom: 15px;
-     right: 73%;
+     right: 77%;
      letter-spacing: 2px;
      content: close-quote;  
      font-size: 50px;  
