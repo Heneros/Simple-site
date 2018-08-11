@@ -23,10 +23,11 @@ $(document).ready(function(){
         $('body,html').animate({scrollTop: top}, 500);
     });
 });
+
+
 //responsive menu on phone
 $(document).ready(function(){
   $('.main-nav-trigger').click(function(){
-    $(this).next('.horizontal-nav').slideToggle()
+    $(this).next('.horizontal-nav').slideToggle();
   });
 });
-

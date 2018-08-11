@@ -2,7 +2,7 @@
 .main-nav-trigger {
   display: none;
   font-size: 45px;
-  color: #5f5f5f;
+  color: #fff;
   float: right;
   line-height: 1;
   cursor: pointer;
@@ -11,13 +11,46 @@
     color: pink;
   }
 }
-@media screen and (max-width: 930px){
+
+@media screen and (max-width: 992px){
 	.hero-heading{
-	min-width: 139%;
+    padding-top: 261px;
+     padding-right: 191px;
 	}
-  .main-nav-trigger{
+.horizontal-nav{
+height: 199px;
+}
+.bread{
+
+}
+#btn_header{
+padding-right: 35px;
+}
+.main-nav-trigger{
     display: block;
   }
+
+
+    .navigation{
+    height: 545px;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    left: 0;
+    background-color: fade(@bg-shadow, 70%);
+  }
+.menu-item {
+  width: 100%;
+  display: block;
+  margin-left: 0;
+  text-align: center;
+  border-bottom: 1px solid lighten(@overlay, 15% );
+}
+.menu-link{
+  display: inline-block;
+  padding: 20px 30px;
+    }
+
 }
 @media (min-width: 992px) and (max-width: 1200px){
 	header{
