@@ -14,9 +14,17 @@
 
 @media screen and (max-width: 992px){
 	.hero-heading{
-    padding-top: 261px;
-    padding-right: 191px;
-	}
+    position: relative;
+    top: 148px;
+    right: 185px;
+   button{
+   }
+   h1, p{
+       white-space:nowrap;
+   }
+}
+
+
 .logo{
 font-size: 45px;
 display: block;
@@ -24,10 +32,11 @@ position: relative;
 left: 28%;
 }
 .bread{
-
+    position: absolute;
+    top: 85rem;
 }
 #btn_header{
-padding-right: 35px;
+
 }
 .society{
     font-size: 23px;
@@ -42,6 +51,9 @@ padding-right: 35px;
     flex-direction: column;
     align-items: stretch;    
     background-color: fade(@bg-shadow, 70%);
+    position: absolute;
+    z-index: 999;
+    top:0;
   }
 .menu-item {
   width: 100%;
@@ -50,23 +62,44 @@ padding-right: 35px;
   height: 80px;
   text-align: center;
   border-bottom: 1px solid #fff;
-       &:after{
-    content: '~';
-    display: block;
-    font-size: 35px;
-    color: #fff;
-    font-weight: 600;
-    line-height: 20px;
-    position: absolute;
-    margin-left: -50px;
-    bottom: 47px;
-  }
+
 }
 .menu-link{
   display: inline-block;
   padding: 0px 30px;
     }
 
+
+
+.desc{
+   white-space:nowrap;
+}
+
+.chef-cook{
+    position: relative;
+    left: 8px;
+}
+.desc-cake{
+    position: relative;
+    right: 76px;
+}
+
+.center{
+    position: absolute;
+    top: 190rem;
+    left: 5rem;
+.block-text{
+    font-size: 34px!important;
+    top: 90px!important;
+    transform: translateX(40%)!important;
+}
+img{
+    width: 77%;
+}
+}
+.gridients{
+    width: 62%;
+}
 }
 @media (min-width: 992px) and (max-width: 1200px){
 	header{
@@ -79,11 +112,7 @@ white-space: nowrap;
 
 	}
 
-	// .navigation{
- //    display: inline-flex;
- //    flex-wrap: nowrap;
- //    flex-direction: column;
-	// }
+
 }
 @media(max-width: 1540px){
     .desc-cake{
@@ -133,7 +162,6 @@ white-space: nowrap;
 		margin-left: 72px;
 	}
 }
-
 
 @media(max-width: 1300px) {
 		.pancakes{
