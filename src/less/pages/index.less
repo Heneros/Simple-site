@@ -419,11 +419,11 @@ min-width: 46%;
 ///Bg-breakfast-starts
 .bg-breakfast{
   .bg-img('bg-breakfast.png');
-  max-width: 100%;
   height: 790px;
   position: relative;
   font-family: 'Alegreya', sans-serif;
   .breakfast{
+  white-space: nowrap;
     h1{
     font-size: 82px;
     font-weight: 600;
@@ -461,14 +461,18 @@ min-width: 46%;
   }
  }
 }
+
  .breakfast-right{
     display: flex;
     justify-content: flex-end;
     position: relative;
     bottom: 67rem;
     left: 74rem;
+        // width: 44%;
+    white-space: nowrap;
   img{
-    height: 700px;
+    width: 34%;
+
   }
   .left-title-breakfast{
     position: relative;
@@ -516,6 +520,9 @@ min-width: 46%;
     right: 92rem;
     position: relative;
     margin-top: 38rem;
+    // width: 20%;
+    white-space: nowrap;
+    
     font-size: 20px;
     text-align: center;
     font-family: 'Alegreya',sans-serif;
