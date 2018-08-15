@@ -123,13 +123,16 @@ white-space: nowrap;
     .desc-cake{
    margin-left: 28%;
     }
-
+.chef-cook{
+    position: relative;
+    left: 35%;
+}
      .tastes  {
     display: inline-flex;
     justify-content: center;
     flex-flow: row wrap;
     align-items: center;
-    width: 75%;
+    width: 74%;
     margin-left: 15%;
  }
     .center{
@@ -141,11 +144,12 @@ white-space: nowrap;
     flex-direction: row;
     img{
         margin-top: 3%;
+        max-width: 400px;
     }
     .block-text{
     top: 87px;
-    font-size: 3vh;
-    transform: translateX(68%);
+    font-size: 4vh;
+    transform: translateX(46%);
     }
     }
 
@@ -171,7 +175,6 @@ white-space: nowrap;
 		margin-left: 72px;
 	}
 
-
 ///breakfast
 
  .breakfast-right{
@@ -182,13 +185,19 @@ white-space: nowrap;
     }
         .breakfast-title{
     right: 50rem;
+    font-size: 36px;
      }
      .breakfast-describe{
-    position: absolute;
-    margin-right: 114px;
+      margin-left: 118px; 
+    // position: absolute;
+    // left: -93px;
      }
+ .right-title-breakfast{
+  right: 2%;
+ }
      .breakfast-submit{
-    margin-left: 41rem;
+    left: 16%;
+    position: absolute;
      }
   }
 
@@ -196,6 +205,11 @@ white-space: nowrap;
 @media(max-width: 1679px) {
      .breakfast-describe{
     margin-left: 50px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 18px !important;
      }
 }
 
@@ -241,6 +255,22 @@ white-space: nowrap;
 
 
 @media (max-width: 1299px){
+  .bread{
+    margin-top: 5%;
+  }
+.block-text{
+ font-size: 33px !important;
+}
+ .breakfast-right{
+    min-width: 112%;
+ }
+.chef-cook{
+      left: 46%;
+}
+ .desc-cake{
+     margin-left: 24%;
+    width: 70%;
+ }
   .bg-table{
     background-position: 48% 20%;
     font-size: 16px;
@@ -248,6 +278,7 @@ white-space: nowrap;
     .pancakes{
     max-width: 250px;
     font-size: 16px;
+    right: 145px;
         img{
     max-height: 450px;
         }
