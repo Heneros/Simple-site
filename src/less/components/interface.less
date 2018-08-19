@@ -177,7 +177,7 @@ white-space: nowrap;
 	}
    .recipe{
     margin-left: 116px;
-    margin-bottom: 4px;
+    margin-bottom: -2px;
 	}
 
     #slider{
@@ -197,8 +197,9 @@ white-space: nowrap;
  .breakfast-right{
         display: flex;
         justify-content: stretch;
+        // min-width: 44%;
     img{
-            width: 40%;
+min-width: 44%;
     }
         .breakfast-title{
     right: 50rem;
@@ -268,7 +269,7 @@ white-space: nowrap;
 
 }
 
-@media(max-width: 1300px) {
+@media screen and (max-width: 1300px) {
 		.pancakes{
     position: relative;
     top: 13rem;
@@ -307,8 +308,54 @@ white-space: nowrap;
         margin-left: 35px;
     }
 }
+
+
+.sandwich-main{
+   .overlay-sandwich{
+    position: relative;
+    left: -18.5rem;
+    top: 13rem;
+      img{
+width: 193px;
+    min-height: 173px;
+  }
+  .textSawndich{
+    right: 121px;
+  }
+}
+.full_recipe{
+top: 37rem;
+}
+}
+.vector_sandwich{
+    position: absolute;
+    top: 2px;
+    left: -14.5rem!important;
+    img{
+    height: 176px;
+    width:204px;
+    }
+
+}
+.cook_sandwich{
+    position: relative;
+    top: -44px;
+    left: 2.5rem!important;
+    img{
+    height: 176px;
+    width:204px;
+    }
+
 }
 
+
+.sandwich-main{
+img{
+max-width: 646px;
+}
+}///main-sandwich
+
+}
 
 @media (max-width: 1299px){
   .bread{
